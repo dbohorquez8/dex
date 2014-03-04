@@ -1,0 +1,53 @@
+@import 'lib/variables';
+@import 'lib/mixins';
+@import 'lib/functions';
+
+@import 'partials/all';
+
+body{
+  font-family: "Helvetica Neue", serif;
+  font-weight: 300;
+}
+
+a{
+  color: #03C;
+}
+
+.pokemon-info{
+  background: #F6F6F6;
+  border: 1px solid #DADADA;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.logo{
+  @extend .alpha;
+  line-height: 60px;
+
+  a{
+    color: #C33;
+    text-decoration: none;
+  }
+}
+
+.main-header{  
+  margin-bottom: 20px;
+}
+
+.main-content{
+  padding-bottom: 40px;
+}
+
+ul{
+  list-style: disc outside;
+  margin-left: 20px;
+}
+
+ol{
+  list-style: decimal outside;
+  margin-left: 30px;
+}
+
+.pokemon-list{
+  @extend .pokemon-info;
+}
