@@ -1,10 +1,12 @@
 <article class="pokemon pokemon-info">
   <header class="pokemon__header media">
-    <img src="" ng-src="{{ pokemon.image_url }}" alt="{{ pokemon.name }}" class="media__img">
+    <div class="media__img pokemon__image">
+      <p>#{{ pokemon.national_id }}</p>
+      <img src="" ng-src="{{ pokemon.image_url }}" alt="{{ pokemon.name }}">
+    </div>
     <div class="media__body">
-      <h1 class="pokemon__name beta">{{ pokemon.national_id }}. {{ pokemon.name }}</h1>
-      <p ng-show="pokemon.species">{{ pokemon.species }}</p>
-      <p ng-show="pokemon.description">{{ pokemon.description }}</p>
+      <h1 class="pokemon__name beta">{{ pokemon.name }}</h1>
+      <p>{{ pokemon.description }}</p>
       <ul class="pokemon__types">
         <li ng-repeat="type in pokemon.types" class="type--{{ type.name }}">{{ type.name }}</li>
       </ul>

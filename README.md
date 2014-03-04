@@ -33,4 +33,3 @@ The goal is to create a quick reference tool in which Pokémon players can searc
 - Items
   - Effect
   - Game Locations
-- 

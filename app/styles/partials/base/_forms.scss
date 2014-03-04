@@ -2,8 +2,10 @@
   @if $global-border-box == false{
     @include box-sizing(border-box);
   }
-  border: 1px solid #CCC;
-  border-radius: 5px;
+
+  background: none;
+  border: 0 none;
+  border-bottom: 1px solid $border-default;
   padding: 4px 8px;
 }
 

@@ -5,6 +5,10 @@ html{
   line-height:1.5;    /* 24px (This is now our magic number; all subsequent margin-bottoms and line-heights want to be a multiple of this number in order to maintain vertical rhythm.) */
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+}
+
 /* Common margin-bottom for vertical rhythm. */
 h1,h2,h3,h4,h5,h6,
 ul,ol,dl,

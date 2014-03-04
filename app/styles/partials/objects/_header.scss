@@ -1,0 +1,19 @@
+.main-header{
+  background: $brand-primary;
+  padding: 5px 10px;
+  text-align: center;
+
+  @include media-query(lap-and-up) {
+    margin-bottom: $half-spacing-unit;
+  }
+}
+
+.logo{
+  @extend .beta;
+  line-height: 1;
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+}

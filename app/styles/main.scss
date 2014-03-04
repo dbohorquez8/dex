@@ -5,49 +5,33 @@
 @import 'partials/all';
 
 body{
-  font-family: "Helvetica Neue", serif;
+  font-family: "Open Sans", "Helvetica Neue", serif;
   font-weight: 300;
+  max-width: 320px;
 }
 
 a{
-  color: #03C;
+  color: $brand-secondary;
 }
 
-.pokemon-info{
-  background: #F6F6F6;
-  border: 1px solid #DADADA;
-  border-radius: 5px;
-  padding: 20px;
+strong {
+  font-weight: 400;
 }
 
-.logo{
-  @extend .alpha;
-  line-height: 60px;
-
-  a{
-    color: #C33;
-    text-decoration: none;
-  }
-}
-
-.main-header{  
-  margin-bottom: 20px;
+img {
+  max-width: 100%;
 }
 
 .main-content{
   padding-bottom: 40px;
 }
 
-ul{
+.list-disc{
   list-style: disc outside;
   margin-left: 20px;
 }
 
-ol{
+.list-decimal{
   list-style: decimal outside;
   margin-left: 30px;
-}
-
-.pokemon-list{
-  @extend .pokemon-info;
 }
