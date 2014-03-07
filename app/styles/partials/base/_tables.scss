@@ -1,0 +1,10 @@
+.table--clean {
+  th, td {
+    padding: 3px;
+  }
+
+  th {
+    border-bottom: 1px solid $border-default;
+    font-weight: 400;
+  }
+}

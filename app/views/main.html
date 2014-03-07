@@ -1,7 +1,7 @@
 <div class="dropdown-container">
-  <input type="search" class="text-input push--bottom one-whole" placeholder="Type a Pokemon name..." ng-model="search" typeahead="pokemon.name for pokemon in pokedex | filter:$viewValue | limitTo:10" autofocus>
+  <input type="text" class="text-input push--bottom one-whole" placeholder="Type a Pokemon name..." ng-model="search" typeahead="pokemon.name for pokemon in pokedex | filter:$viewValue | limitTo:10" autofocus>
 </div>
 
-<div ng-show="search">
+<div ng-show="pokemon">
   <div ng-include="'views/pokemon/show.html'"></div>
 </div>

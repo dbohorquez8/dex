@@ -3,6 +3,7 @@
 angular.module('dexApp', [
   'ngResource',
   'ngRoute',
+  'ngSanitize',
   'ui.bootstrap'
   # 'app.directives'
 ])
@@ -16,3 +17,10 @@ angular.module('dexApp', [
         controller: 'MainCtrl'
       .otherwise
         redirectTo: '/'
+
+
+$ ->
+  setTimeout (->
+    window.scrollTo 0, 1
+    return
+  ), 0

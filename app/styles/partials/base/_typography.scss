@@ -5,6 +5,11 @@ html{
   line-height:1.5;    /* 24px (This is now our magic number; all subsequent margin-bottoms and line-heights want to be a multiple of this number in order to maintain vertical rhythm.) */
 }
 
+body {
+  font-size:16px;
+  font-size:0.875rem;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-weight: 400;
 }
@@ -75,4 +80,21 @@ small,.milli {
   font-size:12px;
   font-size:0.75rem;  /* 12px */
   line-height:1.2;      /* 24px */
+}
+
+.text--thin {
+  font-weight: 300;
+}
+
+.text--capitalize {
+  text-transform: capitalize;
+}
+
+.seaction-heading {
+  @extend .epsilon;
+  background: $brand-primary;
+  color: white;
+  line-height: 1;
+  margin: 0 -10px 0.5em;
+  padding: 4px 10px;
 }
