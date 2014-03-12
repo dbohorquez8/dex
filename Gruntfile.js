@@ -1,4 +1,4 @@
-// Generated on 2014-02-23 using generator-angular 0.7.1
+// Generated on 2014-03-12 using generator-angular 0.7.1
 'use strict';
 
 // # Globbing
@@ -60,7 +60,7 @@ module.exports = function (grunt) {
       options: {
         port: 9000,
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: '0.0.0.0',
+        hostname: 'localhost',
         livereload: 35729
       },
       livereload: {
@@ -273,7 +273,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '.tmp/concat/scripts',
-          src: '*.js',
+          src: ['scripts/**/*.js'],
           dest: '.tmp/concat/scripts'
         }]
       }
@@ -421,11 +421,5 @@ module.exports = function (grunt) {
     'newer:jshint',
     'test',
     'build'
-  ]);
-
-  grunt.registerTask('heroku', [
-    'compass:dist', 
-    'autoprefixer', 
-    'imagemin'
   ]);
 };
