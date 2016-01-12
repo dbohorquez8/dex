@@ -22,8 +22,6 @@ angular.module('dexApp')
         setPokemonDescription(pokemon, $scope.pokemon)
         setEvolutionLine(pokemon, $scope.pokemon)
 
-        console.log $scope.pokemon.evolutions
-
         # Calculate total stats
         $scope.pokemon.total =  $scope.pokemon.hp + $scope.pokemon.attack +
                                 $scope.pokemon.defense + $scope.pokemon.sp_atk +
